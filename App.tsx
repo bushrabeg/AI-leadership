@@ -4,6 +4,7 @@ import { TrendingUp, Clock, Globe, Zap, ArrowRight, BarChart3, ShieldCheck } fro
 import { AI_PILLARS } from './constants';
 import { PillarCard } from './components/PillarCard';
 import { LeadershipRadar } from './components/LeadershipRadar';
+import { AILeadershipGraphic } from './components/AILeadershipGraphic';
 import { getAIInsights } from './services/geminiService';
 import { AIPrediction } from './types';
 
@@ -107,6 +108,11 @@ const App: React.FC = () => {
             <h3 className="font-bold text-slate-100 mb-2">Stability & Risk</h3>
             <p className="text-sm text-slate-400">Risk management shifts from ethical theory to practical execution as AI permeates the physical world.</p>
           </div>
+        </div>
+
+        {/* AI Leadership Graphic - Main Visual */}
+        <div className="mb-16">
+          <AILeadershipGraphic />
         </div>
 
         {/* Pillars Grid */}
