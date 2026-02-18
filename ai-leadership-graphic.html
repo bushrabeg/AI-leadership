@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Liderlik Haritası 2026-2030</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+      min-height: 100vh;
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, #60a5fa, #e2e8f0, #f87171);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .card-hover:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 40px rgba(6, 182, 212, 0.1);
+    }
+    .bar-usa {
+      background: linear-gradient(90deg, #2563eb, #60a5fa);
+    }
+    .bar-china {
+      background: linear-gradient(90deg, #f87171, #dc2626);
+    }
+    @keyframes pulse-slow {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+    .animate-pulse-slow {
+      animation: pulse-slow 3s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body class="text-slate-100 p-4 md:p-8">
+  <div class="max-w-6xl mx-auto">
+
+    <!-- Header -->
+    <div class="bg-gradient-to-r from-blue-900/30 via-purple-900/20 to-red-900/30 rounded-3xl p-8 mb-8 border border-slate-700/50">
+      <div class="flex items-center justify-center gap-4 mb-4">
+        <span class="text-4xl">🇺🇸</span>
+        <h1 class="text-3xl md:text-5xl font-black text-center gradient-text">
+          AI LİDERLİK HARİTASI
+        </h1>
+        <span class="text-4xl">🇨🇳</span>
+      </div>
+      <p class="text-center text-slate-400 text-sm md:text-base max-w-2xl mx-auto">
+        2026-2030 Projeksiyonu: 7 kritik element üzerinden ABD ve Çin'in yapay zeka üstünlük mücadelesi
+      </p>
+
+      <!-- Overall Summary -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+        <!-- 2026 -->
+        <div class="bg-slate-900/60 rounded-2xl p-6 border border-blue-500/20">
+          <div class="flex justify-between items-center mb-4">
+            <span class="text-2xl font-black text-blue-400">2026</span>
+            <span class="text-xs text-slate-500 uppercase tracking-wider">Mevcut Durum</span>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="text-center">
+              <div class="text-4xl font-black text-blue-400">2</div>
+              <div class="text-xs text-slate-500">🇺🇸 Lider</div>
+            </div>
+            <div class="flex-1 h-10 bg-slate-800 rounded-full flex overflow-hidden">
+              <div class="bar-usa flex items-center justify-center text-white text-sm font-bold" style="width: 48%">48%</div>
+              <div class="bar-china flex items-center justify-center text-white text-sm font-bold" style="width: 52%">52%</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-black text-red-400">2</div>
+              <div class="text-xs text-slate-500">🇨🇳 Lider</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2030 -->
+        <div class="bg-slate-900/60 rounded-2xl p-6 border border-red-500/30 animate-pulse-slow">
+          <div class="flex justify-between items-center mb-4">
+            <span class="text-2xl font-black text-red-400">2030</span>
+            <span class="text-xs text-slate-500 uppercase tracking-wider">Projeksiyon</span>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="text-center">
+              <div class="text-4xl font-black text-blue-400">0</div>
+              <div class="text-xs text-slate-500">🇺🇸 Lider</div>
+            </div>
+            <div class="flex-1 h-10 bg-slate-800 rounded-full flex overflow-hidden">
+              <div class="bar-usa flex items-center justify-center text-white text-sm font-bold" style="width: 38%">38%</div>
+              <div class="bar-china flex items-center justify-center text-white text-sm font-bold" style="width: 62%">62%</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-black text-red-400">5</div>
+              <div class="text-xs text-slate-500">🇨🇳 Lider</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Elements Grid -->
+    <div class="space-y-4 mb-8">
+
+      <!-- 1. Compute -->
+      <div class="bg-slate-900/50 rounded-2xl border border-slate-800 p-6 card-hover transition-all duration-300">
+        <div class="flex flex-wrap items-center gap-4 mb-4">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center text-2xl">💻</div>
+          <div class="flex-1 min-w-[200px]">
+            <h3 class="text-xl font-bold text-slate-100">Compute</h3>
+            <p class="text-xs text-slate-500">Hesaplama Gücü</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="text-center px-3 py-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
+              <div class="text-[10px] text-slate-500">2026</div>
+              <div class="text-sm font-bold text-blue-400">🇺🇸 ABD</div>
+            </div>
+            <span class="text-2xl">→</span>
+            <div class="text-center px-3 py-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
+              <div class="text-[10px] text-slate-500">2030</div>
+              <div class="text-sm font-bold text-purple-400">⚖️ YAKIN</div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+          <div>
+            <div class="flex justify-between text-xs text-slate-500 mb-1"><span>USA 75%</span><span>ÇİN 55%</span></div>
+            <div class="h-3 flex rounded-full overflow-hidden bg-slate-800">
+              <div class="bar-usa" style="width: 58%"></div>
+              <div class="bar-china" style="width: 42%"></div>
+            </div>
+            <p class="text-xs text-slate-400 mt-2 italic">"ABD önde"</p>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs text-slate-500 mb-1"><span>USA 65%</span><span>ÇİN 70%</span></div>
+            <div class="h-3 flex rounded-full overflow-hidden bg-slate-800">
+              <div class="bar-usa" style="width: 48%"></div>
+              <div class="bar-china" style="width: 52%"></div>
+            </div>
+            <p class="text-xs text-slate-400 mt-2 italic">"Çin yakalıyor/geçebilir"</p>
+          </div>
+        </div>
+        <div class="flex items-center justify-between p-3 bg-cyan-500/10 rounded-xl border border-cyan-500/20">
+          <span class="text-xs font-bold text-cyan-400 uppercase">📉 Fark Tahmini</span>
+          <span class="text-sm text-slate-300 font-semibold">Gap daralıyor (2-5x)</span>
+        </div>
+      </div>
+
+      <!-- 2. Energy -->
+      <div class="bg-slate-900/50 rounded-2xl border border-slate-800 p-6 card-hover transition-all duration-300">
+        <div class="flex flex-wrap items-center gap-4 mb-4">
+          <div class="w-12 h-12 rounded-xl bg-yellow-500/20 flex items-center justify-center text-2xl">⚡</div>
+          <div class="flex-1 min-w-[200px]">
+            <h3 class="text-xl font-bold text-slate-100">Energy</h3>
+            <p class="text-xs text-slate-500">Enerji</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="text-center px-3 py-2 bg-red-500/20 rounded-lg border border-red-500/30">
+              <div class="text-[10px] text-slate-500">2026</div>
+              <div class="text-sm font-bold text-red-400">🇨🇳 ÇİN</div>
+            </div>
+            <span class="text-2xl">→</span>
+            <div class="text-center px-3 py-2 bg-red-500/20 rounded-lg border border-red-500/30">
+              <div class="text-[10px] text-slate-500">2030</div>
+              <div class="text-sm font-bold text-red-400">🇨🇳 ÇİN</div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+          <div>
+            <div class="flex justify-between text-xs text-slate-500 mb-1"><span>USA 45%</span><span>ÇİN 70%</span></div>
+            <div class="h-3 flex rounded-full overflow-hidden bg-slate-800">
+              <div class="bar-usa" style="width: 39%"></div>
+              <div class="bar-china" style="width: 61%"></div>
+            </div>
+            <p class="text-xs text-slate-400 mt-2 italic">"Çin önde"</p>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs text-slate-500 mb-1"><span>USA 40%</span><span>ÇİN 90%</span></div>
+            <div class="h-3 flex rounded-full overflow-hidden bg-slate-800">
+              <div class="bar-usa" style="width: 31%"></div>
+              <div class="bar-china" style="width: 69%"></div>
+            </div>
+            <p class="text-xs text-slate-400 mt-2 italic">"Çin net önde"</p>
+          </div>
+        </div>
+        <div class="flex items-center justify-between p-3 bg-cyan-500/10 rounded-xl border border-cyan-500/20">
+          <span class="text-xs font-bold text-cyan-400 uppercase">🚀 Fark Tahmini</span>
+          <span class="text-sm text-slate-300 font-semibold">2-3 kat üretim</span>
+        </div>
+      </div>
+
+      <!-- 3. Robotics -->
+      <div class="bg-slate-900/50 rounded-2xl border border-slate-800 p-6 card-hover transition-all duration-300">
+        <div class="flex flex-wrap items-center gap-4 mb-4">
+          <div class="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center text-2xl">🤖</div>
+          <div class="flex-1 min-w-[200px]">
+            <h3 class="text-xl font-bold text-slate-100">Robotics & Adv. Manufacturing</h3>
+            <p class="text-xs text-slate-500">Robotik & İleri İmalat</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="text-center px-3 py-2 bg-red-500/20 rounded-lg border border-red-500/30">
+              <div class="text-[10px] text-slate-500">2026</div>
+              <div class="text-sm font-bold text-red-400">🇨🇳 ÇİN</div>
+            </div>
+            <span class="text-2xl">→</span>
+            <div class="text-center px-3 py-2 bg-red-600/30 rounded-lg border border-red-500/50">
+              <div class="text-[10px] text-slate-500">2030</div>
+              <div class="text-sm font-bold text-red-400">🇨🇳 DOMİNE</div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+          <div>
+            <div class="flex justify-between text-xs text-slate-500 mb-1"><span>USA 30%</span><span>ÇİN 80%</span></div>
+            <div class="h-3 flex rounded-full overflow-hidden bg-slate-800">
+              <div class="bar-usa" style="width: 27%"></div>
+              <div class="bar-china" style="width: 73%"></div>
+            </div>
+            <p class="text-xs text-slate-400 mt-2 italic">"Çin büyük önde"</p>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs text-slate-500 mb-1"><span>USA 20%</span><span>ÇİN 95%</span></div>
+            <div class="h-3 flex rounded-full overflow-hidden bg-slate-800">
+              <div class="bar-usa" style="width: 17%"></div>
+              <div class="bar-china" style="width: 83%"></div>
+            </div>
+            <p class="text-xs text-slate-400 mt-2 italic">"Çin domine"</p>
+          </div>
+        </div>
+        <div class="flex items-center justify-between p-3 bg-red-500/10 rounded-xl border border-red-500/20">
+          <span class="text-xs font-bold text-red-400 uppercase">🚀 Fark Tahmini</span>
+          <span class="text-sm text-slate-300 font-semibold">10-20 kat deployment</span>
+        </div>
+      </div>
+
+      <!-- 4. Industrial-Scientific -->
+      <div class="bg-slate-900/50 rounded-2xl border border-slate-800 p-6 card-hover transition-all duration-300">
+        <div class="flex flex-wrap items-center gap-4 mb-4">
+          <div class="w-12 h-12 rounded-xl bg-green-500/20 flex items-center justify-center text-2xl">🔬</div>
+          <div class="flex-1 min-w-[200px]">
+            <h3 class="text-xl font-bold text-slate-100">Industrial-Scientific Base</h3>
+            <p class="text-xs text-slate-500">Endüstriyel-Bilimsel Temel</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="text-center px-3 py-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
+              <div class="text-[10px] text-slate-500">2026</div>
+              <div class="text-sm font-bold text-purple-400">⚖️ YAKIN</div>
+            </div>
+            <span class="text-2xl">→</span>
+            <div class="text-center px-3 py-2 bg-red-500/20 rounded-lg border border-red-500/30">
+              <div class="text-[10px] text-slate-500">2030</div>
+              <div class="text-sm font-bold text-red-400">🇨🇳 ÇİN</div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+          <div>
+            <div class="flex justify-between text-xs text-slate-500 mb-1"><span>USA 65%</span><span>ÇİN 65%</span></div>
+            <div class="h-3 flex rounded-full overflow-hidden bg-slate-800">
+              <div class="bar-usa" style="width: 50%"></div>
+              <div class="bar-china" style="width: 50%"></div>
+            </div>
+            <p class="text-xs text-slate-400 mt-2 italic">"ABD kaliteli, Çin hacim"</p>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs text-slate-500 mb-1"><span>USA 55%</span><span>ÇİN 80%</span></div>
+            <div class="h-3 flex rounded-full overflow-hidden bg-slate-800">
+              <div class="bar-usa" style="width: 41%"></div>
+              <div class="bar-china" style="width: 59%"></div>
+            </div>
+            <p class="text-xs text-slate-400 mt-2 italic">"Çin geçiyor"</p>
+          </div>
+        </div>
+        <div class="flex items-center justify-between p-3 bg-cyan-500/10 rounded-xl border border-cyan-500/20">
+          <span class="text-xs font-bold text-cyan-400 uppercase">📉 Fark Tahmini</span>
+          <span class="text-sm text-slate-300 font-semibold">Çin koordinasyon</span>
+        </div>
+      </div>
+
+      <!-- 5. Talent -->
+      <div class="bg-slate-900/50 rounded-2xl border border-slate-800 p-6 card-hover transition-all duration-300">
+        <div class="flex flex-wrap items-center gap-4 mb-4">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center text-2xl">🎓</div>
+          <div class="flex-1 min-w-[200px]">
+            <h3 class="text-xl font-bold text-slate-100">Talent</h3>
+            <p class="text-xs text-slate-500">Yetenek</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="text-center px-3 py-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
+              <div class="text-[10px] text-slate-500">2026</div>
+              <div class="text-sm font-bold text-purple-400">⚖️ YAKIN</div>
+            </div>
+            <span class="text-2xl">→</span>
+            <div class="text-center px-3 py-2 bg-red-500/20 rounded-lg border border-red-500/30">
+              <div class="text-[10px] text-slate-500">2030</div>
+              <div class="text-sm font-bold text-red-400">🇨🇳 ÇİN</div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+          <div>
+            <div class="flex justify-between text-xs text-slate-500 mb-1"><span>USA 70%</span><span>ÇİN 60%</span></div>
+            <div class="h-3 flex rounded-full overflow-hidden bg-slate-800">
+              <div class="bar-usa" style="width: 54%"></div>
+              <div class="bar-china" style="width: 46%"></div>
+            </div>
+            <p class="text-xs text-slate-400 mt-2 italic">"ABD elite, Çin miktar"</p>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs text-slate-500 mb-1"><span>USA 55%</span><span>ÇİN 80%</span></div>
+            <div class="h-3 flex rounded-full overflow-hidden bg-slate-800">
+              <div class="bar-usa" style="width: 41%"></div>
+              <div class="bar-china" style="width: 59%"></div>
+            </div>
+            <p class="text-xs text-slate-400 mt-2 italic">"Çin önde"</p>
+          </div>
+        </div>
+        <div class="flex items-center justify-between p-3 bg-cyan-500/10 rounded-xl border border-cyan-500/20">
+          <span class="text-xs font-bold text-cyan-400 uppercase">📉 Fark Tahmini</span>
+          <span class="text-sm text-slate-300 font-semibold">Çin hacim + dönüş</span>
+        </div>
+      </div>
+
+      <!-- 6. Risk Management -->
+      <div class="bg-slate-900/50 rounded-2xl border border-slate-800 p-6 card-hover transition-all duration-300">
+        <div class="flex flex-wrap items-center gap-4 mb-4">
+          <div class="w-12 h-12 rounded-xl bg-orange-500/20 flex items-center justify-center text-2xl">🛡️</div>
+          <div class="flex-1 min-w-[200px]">
+            <h3 class="text-xl font-bold text-slate-100">Risk Management</h3>
+            <p class="text-xs text-slate-500">Risk Yönetimi</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="text-center px-3 py-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
+              <div class="text-[10px] text-slate-500">2026</div>
+              <div class="text-sm font-bold text-blue-400">🇺🇸 ABD</div>
+            </div>
+            <span class="text-2xl">→</span>
+            <div class="text-center px-3 py-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
+              <div class="text-[10px] text-slate-500">2030</div>
+              <div class="text-sm font-bold text-purple-400">⚖️ YAKIN</div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+          <div>
+            <div class="flex justify-between text-xs text-slate-500 mb-1"><span>USA 80%</span><span>ÇİN 50%</span></div>
+            <div class="h-3 flex rounded-full overflow-hidden bg-slate-800">
+              <div class="bar-usa" style="width: 62%"></div>
+              <div class="bar-china" style="width: 38%"></div>
+            </div>
+            <p class="text-xs text-slate-400 mt-2 italic">"ABD önde"</p>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs text-slate-500 mb-1"><span>USA 70%</span><span>ÇİN 70%</span></div>
+            <div class="h-3 flex rounded-full overflow-hidden bg-slate-800">
+              <div class="bar-usa" style="width: 50%"></div>
+              <div class="bar-china" style="width: 50%"></div>
+            </div>
+            <p class="text-xs text-slate-400 mt-2 italic">"ABD meşruiyet, Çin pratik"</p>
+          </div>
+        </div>
+        <div class="flex items-center justify-between p-3 bg-purple-500/10 rounded-xl border border-purple-500/20">
+          <span class="text-xs font-bold text-purple-400 uppercase">🤝 Fark Tahmini</span>
+          <span class="text-sm text-slate-300 font-semibold">Yakınlaşma</span>
+        </div>
+      </div>
+
+      <!-- 7. Diffusion -->
+      <div class="bg-slate-900/50 rounded-2xl border border-slate-800 p-6 card-hover transition-all duration-300">
+        <div class="flex flex-wrap items-center gap-4 mb-4">
+          <div class="w-12 h-12 rounded-xl bg-pink-500/20 flex items-center justify-center text-2xl">🌐</div>
+          <div class="flex-1 min-w-[200px]">
+            <h3 class="text-xl font-bold text-slate-100">Diffusion / Adoption</h3>
+            <p class="text-xs text-slate-500">Yayılma / Diffusion</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="text-center px-3 py-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
+              <div class="text-[10px] text-slate-500">2026</div>
+              <div class="text-sm font-bold text-purple-400">⚖️ YAKIN</div>
+            </div>
+            <span class="text-2xl">→</span>
+            <div class="text-center px-3 py-2 bg-red-500/20 rounded-lg border border-red-500/30">
+              <div class="text-[10px] text-slate-500">2030</div>
+              <div class="text-sm font-bold text-red-400">🇨🇳 ÇİN</div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+          <div>
+            <div class="flex justify-between text-xs text-slate-500 mb-1"><span>USA 60%</span><span>ÇİN 55%</span></div>
+            <div class="h-3 flex rounded-full overflow-hidden bg-slate-800">
+              <div class="bar-usa" style="width: 52%"></div>
+              <div class="bar-china" style="width: 48%"></div>
+            </div>
+            <p class="text-xs text-slate-400 mt-2 italic">"Çin yaklaşıyor"</p>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs text-slate-500 mb-1"><span>USA 45%</span><span>ÇİN 90%</span></div>
+            <div class="h-3 flex rounded-full overflow-hidden bg-slate-800">
+              <div class="bar-usa" style="width: 33%"></div>
+              <div class="bar-china" style="width: 67%"></div>
+            </div>
+            <p class="text-xs text-slate-400 mt-2 italic">"Çin globalde önde"</p>
+          </div>
+        </div>
+        <div class="flex items-center justify-between p-3 bg-cyan-500/10 rounded-xl border border-cyan-500/20">
+          <span class="text-xs font-bold text-cyan-400 uppercase">🚀 Fark Tahmini</span>
+          <span class="text-sm text-slate-300 font-semibold">Çin ucuz/open-source</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Summary -->
+    <div class="bg-gradient-to-r from-red-900/20 via-purple-900/30 to-blue-900/20 rounded-3xl p-8 border border-slate-700/50">
+      <h3 class="text-2xl font-black text-center text-slate-200 mb-6">📊 GENEL DEĞERLENDİRME</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div class="bg-slate-900/60 rounded-xl p-5 text-center border border-red-500/20">
+          <div class="text-3xl mb-2">🏭</div>
+          <h4 class="font-bold text-red-400 mb-2">Üretim & Enerji</h4>
+          <p class="text-sm text-slate-400">Çin 2030'da mutlak hakimiyet</p>
+        </div>
+        <div class="bg-slate-900/60 rounded-xl p-5 text-center border border-purple-500/20">
+          <div class="text-3xl mb-2">🧠</div>
+          <h4 class="font-bold text-purple-400 mb-2">Temel Araştırma</h4>
+          <p class="text-sm text-slate-400">ABD kalite, Çin hacim avantajı</p>
+        </div>
+        <div class="bg-slate-900/60 rounded-xl p-5 text-center border border-blue-500/20">
+          <div class="text-3xl mb-2">⚖️</div>
+          <h4 class="font-bold text-blue-400 mb-2">Risk & Etik</h4>
+          <p class="text-sm text-slate-400">ABD meşruiyet lideri kalıyor</p>
+        </div>
+      </div>
+
+      <div class="p-5 bg-slate-800/50 rounded-xl border border-cyan-500/20">
+        <p class="text-base text-slate-300 text-center leading-relaxed">
+          <span class="text-cyan-400 font-bold text-lg">Sonuç:</span> 2026'dan 2030'a geçişte Çin, 7 kritik elementin <span class="text-red-400 font-bold">5'inde</span> liderliği ele geçiriyor.
+          ABD sadece Risk Yönetimi'nde dengeyi koruyor. <span class="text-yellow-400 font-bold">Hesaplama gücü</span> kritik dönüm noktası olacak.
+        </p>
+      </div>
+    </div>
+
+    <!-- Watermark -->
+    <p class="text-center text-slate-600 text-xs mt-8">AI Leadership Map 2026-2030 Projection</p>
+
+  </div>
+</body>
+</html>
